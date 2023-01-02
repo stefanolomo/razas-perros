@@ -2,7 +2,6 @@ let BreedListApiUrl = "https://dog.ceo/api/breeds/list/all";
 let BaseUrlApi = "https://dog.ceo/api/breed/"
 let BreedDOMContainer = document.querySelector(".breed-container")
 let BreedImageContainer = document.querySelector(".breed-image-container")
-let ImageDisplay = document.querySelector(".img")
 
 fetch(BreedListApiUrl)
 	.then((response) => response.json())
@@ -26,6 +25,8 @@ let consumeApi = (Breed) => {
 }
 
 let getBreed = (element) => {
+	const elements = document.querySelectorAll(".img")
+	elements.forEach(element => element.remove())
 	let Breed = element.value
 	consumeApi(Breed)
 };
