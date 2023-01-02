@@ -9,6 +9,10 @@ main select {
   outline: none;
   font-family: monospace;
 }
+main .selection-area {
+  display: flex;
+  justify-content: center;
+}
 main .image-display .breed-image-container {
   display: flex;
   flex-wrap: wrap;
