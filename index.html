@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Razas de perros</title>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<main>
+		<section class="selection-area">
+			<select class="breed-container" name="Breed" onchange="getBreed(this);">
+				<option value="" disabled selected>Selecciona la raza</option>
+			</select>
+		</section>
+		<section class="image-display">
+			<div class="breed-image-container">
+			</div>
+		</section>
+	</main>
+	<script src="./js/dogBreedAPI.js"></script>
+</body>
+</html>

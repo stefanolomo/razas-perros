@@ -1,0 +1,25 @@
+@import url(./normalize.min.css);
+@import url(./variables.css);
+@import url(./fuentes.css);
+@import url(./mixins.less);
+main{
+	padding: var(--xxl);
+	select{
+		border: none;
+		outline: none;
+		font-family: monospace;
+	}
+	.image-display{
+		.breed-image-container{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: var(--xxl);
+			img{
+				width: 50%;
+    			height: 330px;
+    			object-fit: cover;
+			}
+		}
+	}
+}

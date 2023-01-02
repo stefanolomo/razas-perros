@@ -1,0 +1,22 @@
+@import url(normalize.min.css);
+@import url(variables.css);
+@import url(fuentes.css);
+main {
+  padding: var(--xxl);
+}
+main select {
+  border: none;
+  outline: none;
+  font-family: monospace;
+}
+main .image-display .breed-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--xxl);
+}
+main .image-display .breed-image-container img {
+  width: 50%;
+  height: 330px;
+  object-fit: cover;
+}
